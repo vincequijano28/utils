@@ -18,8 +18,8 @@ int parstr(char * src, char * p, char * eos, int len)
 	int rc = 0;
 	
 	/* print inputs */
-	printf("Input string: \"%s\"\n", src);
-	printf("To parse: \"%s\"\n", p);
+	//printf("Input string: \"%s\"\n", src);
+	//printf("To parse: \"%s\"\n", p);
 
 	/* parse the string*/
 	loc = strstr(src, p);
@@ -35,11 +35,11 @@ int parstr(char * src, char * p, char * eos, int len)
 			
 			/* write back the eos (end of string) of string */
 			eos = loc;
-			printf("address is: %d\n", loc);
+			//printf("address is: %d\n", loc);
 		}
 		else {
-			printf("ERROR: String do not match!\n");
-			printf("Parsed string: \"%s\"\n", tmp);
+			//printf("ERROR: String do not match!\n");
+			//printf("Parsed string: \"%s\"\n", tmp);
 		}
 	}
 	else {
